@@ -100,9 +100,14 @@ function calculatePayroll(employees) {
 
 function createEmployeeRecords(data) {
 
-    return data.map(row => {
-        return createEmployeeRecord(row)
-    })
+    //
+    //
+    // ATTENTION
+    //
+    // THIS ONE LINER WORKS BC IF YOU USE => FUNC AND DONT
+    //USE { } THEN THERE ARE IMPLICIT RETURNS
+    //
+    return data.map(row => createEmployeeRecord(row))
 }
 
 
